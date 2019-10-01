@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', 'Fira Sans Condensed', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.header {
+    width: 1440px;
+    height: 900px;
+    margin: 0 auto;
+    background: url(img/pizza.jpg);
+    background-size: cover;
+}
+
+.menu {
+    width: 1440px;
+    height: 100px;
+    background-color: #ffffff;
+    border: solid 1px rgb(240, 239, 239);
+    z-index: 1000;
+    position: relative;
+}
+
+.logo {
+    width: 235px;
+    height: 48px;
+    position: absolute;
+    left: 140px;
+    top: 27px;
+}
+
+.nav {
+    position: absolute;
+    top: 45px;
+    left: 435px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.link__nav {
+    margin-left: 35px;
+    text-decoration: none;
+    color: #1c4f9a;
+}
+
+.link__nav:hover {
+    color:#ff3419;
+    transition: 0.1s;
+}
+
+.link__nav:active {
+    color:rgba(00, 00, 00, 0.4);
+}
+
+.lang_switcher {
+    position: absolute;
+    top: 45px;
+    right: 263px;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ffffff;
+    color: #1c4e9a;
+}
+
+.lang_switcher:active {
+    color: rgba(00, 00, 00, 0.4);
+}
+
+/* Languages switches separately (not perfect solution)
+
+.lang_switcher_ukr {
+    position: absolute;
+    top: 45px;
+    right: 263px;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: #1c4e9a00;
+    background: #ffffff;
+    color: rgba(00, 00, 00, 0.4);
+}
+
+.lang_switcher_ukr:active {
+    color: #1c4f9a;
+}
+
+
+
+.lang_switcher_ru {
+    position: absolute;
+    top: 45px;
+    right: 285px;
+    font-size: 13px;
+    text-decoration: #1c4e9a00;
+    text-transform: uppercase;
+    background: #ffffff;
+    color: #1c4f9a;
+}
+
+
+    .lang_switcher_ru:active {
+    color: rgba(00, 00, 00, 0.4);
+}
+
+*/
+
+
