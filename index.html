@@ -1,35 +1,41 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Fira+Sans+Condensed&display=swap" rel="stylesheet">
-    <title>Blue cafe</title>
+    <title>Test</title>
 </head>
 <body>
+
     <header class="header">
-        <div class="menu">
-            <div class="logo"><img src="img/Logo.svg" alt="Blue Cafe Logo"></div>
-            <nav class="nav">
-                <a class="link__nav" href="#">Меню</a>
-                <a class="link__nav" href="#">Акции</a>
-                <a class="link__nav" href="#">О нас</a>
-                <a class="link__nav" href="#">Галерея</a>
-                <a class="link__nav" href="#">Контакты</a>
-                <a class="link__nav" href="#">+38 (098) 498 01 08</a>
-            </nav>
-            <a class="lang_switcher link__nav" href="#">Рус/Укр</a>
+        <div class="conteiner">
+            <div class="header__inner">
+                <div class="logo"><img src="img/Logo.svg" alt="Blue Cafe"></div>
+                <nav class="nav">
+                    <a class="nav__link" href="#">Меню</a>
+                    <a class="nav__link" href="#">Акции</a>
+                    <a class="nav__link" href="#">О нас</a>
+                    <a class="nav__link" href="#">Галерея</a>
+                    <a class="nav__link" href="#">Контакты</a>
+                    <a class="nav__link" href="tel:+380984980108">+38 (098) 498 01 08</a>
+                </nav>
 
-            <!--Languages switches separately
 
-            <a class="lang_switcher_ru" href="#">Рус/</a>
-            <a class="lang_switcher_ukr" href="#">Укр</a>
-
-            -->
-
+            </div>
         </div>
     </header>
+
+    <div class="hero">
+        <div class="hero__conteiner">
+            <h1 class="hero__title">Пицца «Верона» всего за <span class="hero__title_red">49 грн.</span></h1>
+            <div class="divider"></div>
+            <h2 class="title__offer">Горячее предложение</h2>
+            <p class="title__promo">Долгожданная акция выходного дня.<br/>Большая пицца по цене маленькой!</p>
+            <button class="order_btn">Заказать</button>
+        </div>
+    </div>
 </body>
 </html>
