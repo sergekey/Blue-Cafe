@@ -52,6 +52,9 @@ h1, h2, h3, h4, h5, h6 {
     height: 48px;
 }
 
+
+/* Navigation =====*/
+
 .nav {
     text-transform: uppercase;
 }
@@ -80,8 +83,10 @@ h1, h2, h3, h4, h5, h6 {
     color:rgba(00, 00, 00, 0.4);
 }
 
-.lang_btn {
-    border: 0;
+/* Language switcher =====*/
+
+.lang__btn {
+    border: none;
     background: none;
     text-decoration: none;
     text-transform: uppercase;
@@ -90,21 +95,27 @@ h1, h2, h3, h4, h5, h6 {
     color: #b4b3b3;
 }
 
-.lang_btn:hover {
+.lang__btn:hover {
     color:#ff3419;
 }
 
-.lang_btn:active {
+.lang__btn:active {
     color: #1c4f9a;
-    border:0;
+    border:none;
 }
 
-.lang_btn:focus {
+.lang__btn:focus {
     color: #1c4f9a;
 }
 
-.lang_divider {
+.lang__divider {
     color: #1c4f9a;
+}
+
+.cart__link {
+    border: none;
+    background: none;
+    margin-left: 75px;
 }
 
 /*hero ===== */
@@ -205,5 +216,4 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 45px;
     margin-left: 140px;
 }
-
 
