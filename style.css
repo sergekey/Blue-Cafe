@@ -2,8 +2,9 @@ body {
     margin: 0;
     font-family: 'Fira Sans', sans-serif;
     font-size: 15px;
+    font-weight: 400;
     line-height: 1.5;
-    letter-spacing: 1.1;
+    letter-spacing: 0.1em;
     color: #333;
     background-color: #fff;
 }
@@ -107,6 +108,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 80px;
     font-weight: 400;
     line-height: 1.35;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #fff;
     margin-top: 30px;
@@ -114,8 +116,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero__conteiner {
-    width: 710px;
-    height: 565px;
+    width: 715px;
+    height: 575px;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -127,17 +129,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero__title_red {
     color: #ff3419;
+    text-transform: lowercase;
 }
 
 .divider {
     background-color: #ff3419;
     width: 170px;
     height: 6px;
-    margin: 20px 0;
+    margin: 40px 0;
 }
 
 .title__offer {
     font-size: 19px;
+    font-weight: 400;
     text-transform: uppercase;
     color: #ff3419;
     margin-top: 0;
@@ -147,6 +151,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .title__promo {
     font-size: 19px;
+    font-weight: 400;
     line-height: 30px;
     color: #fff;
 }
@@ -157,8 +162,9 @@ h1, h2, h3, h4, h5, h6 {
     padding: 30px 120px;
     background: none;
     font-size: 24px;
+    font-weight: 400;
     text-transform: uppercase;
-    margin-top: 75px;
+    margin-top: 40px;
 }
 
 
