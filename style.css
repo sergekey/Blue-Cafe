@@ -107,23 +107,22 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Fira Sans Condensed', sans-serif;
     font-size: 80px;
     font-weight: 400;
-    line-height: 1.35;
+    line-height: 1.20;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #fff;
-    margin-top: 30px;
-    margin-left: -5px;
+    margin-top: 190px;
+    margin-left: 135px;
+    position: relative;
 }
 
 .hero__conteiner {
-    width: 715px;
-    height: 575px;
+    width: 1440px;
+    height: 800px;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    margin-top: 100px;
-    margin-left: 135px;
     z-index: 1000;
 }
 
@@ -136,35 +135,43 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #ff3419;
     width: 170px;
     height: 6px;
-    margin: 40px 0;
+    margin-top: 40px;
+    margin-left: 140px;
 }
 
 .title__offer {
     font-size: 19px;
     font-weight: 400;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #ff3419;
-    margin-top: 0;
-    margin-left: 0;
+    margin-top: 150px;
+    margin-left: 140px;
     position: absolute;
 }
 
 .title__promo {
     font-size: 19px;
     font-weight: 400;
+    letter-spacing: 0.1em;
     line-height: 30px;
+    margin-left: 140px;
+    margin-top: 50px;
     color: #fff;
 }
 
 .order_btn {
     color: #fff;
     border: solid 6px;
+    box-sizing: border-box;
     padding: 30px 120px;
     background: none;
     font-size: 24px;
     font-weight: 400;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
-    margin-top: 40px;
+    margin-top: 45px;
+    margin-left: 140px;
 }
 
 
