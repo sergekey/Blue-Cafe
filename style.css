@@ -13,6 +13,7 @@ body {
 *:after,
 * {
     box-sizing: border-box;
+    outline: none !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -59,11 +60,15 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 35px;
     text-decoration: none;
     font-size: 13px;
-    color: #1c4f9a;
+    color: #000000;
 }
 
 .nav__link:first-child {
     margin-left: 60px;
+}
+
+.nav__link:last-child {
+    margin-right: 98px;
 }
 
 .nav__link:hover {
@@ -73,6 +78,33 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav__link:active {
     color:rgba(00, 00, 00, 0.4);
+}
+
+.lang_btn {
+    border: 0;
+    background: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.01em;
+    color: #b4b3b3;
+}
+
+.lang_btn:hover {
+    color:#ff3419;
+}
+
+.lang_btn:active {
+    color: #1c4f9a;
+    border:0;
+}
+
+.lang_btn:focus {
+    color: #1c4f9a;
+}
+
+.lang_divider {
+    color: #1c4f9a;
 }
 
 /*hero ===== */
