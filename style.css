@@ -118,6 +118,11 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 75px;
 }
 
+.cart__link:active {
+    width: 80%;
+    height: auto;
+}
+
 /*hero ===== */
 
 .hero {
@@ -217,3 +222,11 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 140px;
 }
 
+.order_btn:hover {
+    color: #ff3419;
+    border-color: #fff;
+}
+
+.order_btn:active {
+    border-color: #ff3419;
+}

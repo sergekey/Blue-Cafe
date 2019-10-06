@@ -22,10 +22,14 @@
                     <a class="nav__link" href="#">Контакты</a>
                     <a class="nav__link" href="tel:+380984980108">+38 (098) 498 01 08</a>
                 </nav>
+                <div class="lang">
                 <button class="lang__btn">Рус</button>
                 <span class="lang__dvider">/</span>
                 <button class="lang__btn">Укр</button>
-                <a class="cart__link" href="#"><img src="img/buy__btn.svg" alt="Корзина"></a>
+                </div> <!-- /.lang -->
+                <div class="cart">
+                    <a class="cart__link" href="#"><img src="img/buy__btn.svg" alt="Корзина"></a>
+                </div> <!-- /.cart -->
 
             </div>
         </div>
@@ -37,7 +41,11 @@
             <div class="divider"></div>
             <h2 class="title__offer">Горячее предложение</h2>
             <p class="title__promo">Долгожданная акция выходного дня.<br/>Большая пицца по цене маленькой!</p>
-            <button class="order_btn">Заказать</button>
+            <div class="order">
+            <form action="#">
+                <button class="order_btn" type="submit" value="Заказать пиццу">Заказать</button>
+            </form>
+            </div> <!-- /.order -->
         </div>
     </div>
 </body>
