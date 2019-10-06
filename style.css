@@ -113,14 +113,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cart__link {
-    border: none;
-    background: none;
     margin-left: 75px;
+    fill: #fff;
+}
+
+.cart__link:hover {
+    fill: #b4b3b3;
 }
 
 .cart__link:active {
-    width: 80%;
-    height: auto;
+    fill: #1c4f9a;
 }
 
 /*hero ===== */
