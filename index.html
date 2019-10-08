@@ -23,9 +23,9 @@
                     <a class="nav__link" href="tel:+380984980108">+38 (098) 498 01 08</a>
                 </nav>
                 <div class="lang">
-                <button class="lang__btn">Рус</button>
+                <button class="lang__btn" type="button">Рус</button>
                 <span class="lang__dvider">/</span>
-                <button class="lang__btn">Укр</button>
+                <button class="lang__btn" type="button">Укр</button>
                 </div> <!-- /.lang -->
                 <div class="cart">
                     <a class="cart__link" href="#">
@@ -49,23 +49,33 @@
             <p class="title__promo">Долгожданная акция выходного дня.<br/>Большая пицца по цене маленькой!</p>
             <div class="order">
             <form action="#">
-                <button class="order_btn" type="submit" value="Заказать пиццу">Заказать</button>
+                <button class="order_btn" type="button" value="Заказать пиццу">Заказать</button>
             </form>
             </div> <!-- /.order -->
         </div>
     </div>
-    <section class="cookery">
-        <div class="conteiner">
-            <h2 class="cookery__title">Наша кухня</h2>
-            <h3 class="cookery__suptitle">Вкусно и аппетитно</h3>
+    <div class="cooking"> <!-- Наша кухня -->
+        <div class="cooking__title">
+            <p class="main-suptitle">Вкусно и аппетитно</p>
+            <h2 class="main-title">Наша кухня</h2>
             <div class="divider"></div>
-            <p>Мы очень любим итальянские блюда за их богатый насыщенный вкус, пользу, красивую подачу и
+            <p class="lead__text">Мы очень любим итальянские блюда за их богатый насыщенный вкус, пользу, красивую подачу и
                 </br>сытность. Самые популярные блюда Италии готовятся в "Blue Cafe"</p>
-            <div class="cookery__dishes">
-                <img class="cookery__dishes-img" src="img/left block image.jpg" alt="Dishes">
-                <nav class="cookery__dishes-assort"></nav>
+        </div>
+        <div class="cooking__block">
+            <img src="img/left block image.jpg" alt="burger">
+            <div class="cooking__right-block">
+                <div class="assort"> <!-- Блок: блюда-десерты-напитки -->
+                    <div class="brick"><a class="brick__text" href="#">Блюда</a></div>
+                    <div class="brick brick--grey"><a class="brick__text brick__text--inv" href="#">Десерты</a></div>
+                    <div class="brick brick--grey"><a class="brick__text brick__text--inv" href="#">Напитки</a></div>
+                </div>
+                <div class="text-block">
+                    <p class="cooking__text">В нашем кафе мы объединили для Вас самые модные и трендовые направления еды на сегодняшний день!
+                            Все блюда мы готовим исключительно из качественных правильных ингридиентов.</p>
+                </div>
             </div>
-        </div> <!-- /.conteiner -->
-    </section>
+        </div>
+    </div> <!-- /.Наша кухня -->
 </body>
 </html>

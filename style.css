@@ -13,7 +13,7 @@ body {
 *:after,
 * {
     box-sizing: border-box;
-    outline: none !important;
+    outline: none !important; /*remove the borders of lang_btns*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -149,7 +149,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     top: 0;
     left: 0;
-    content: " ";
+    content: "";
     background: linear-gradient(to right, #011533 0.08%, #021d4500 77%)
 }
 
@@ -185,6 +185,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #ff3419;
     width: 170px;
     height: 6px;
+    margin: 0 auto;
 }
 
 .divider--hero {
@@ -234,4 +235,100 @@ h1, h2, h3, h4, h5, h6 {
 
 .order_btn:active {
     border-color: #ff3419;
+}
+
+.cooking {
+    width: 1440px;
+    height: 860px;
+    margin: 0 auto;
+    border: #ff0000 solid 1px;
+}
+
+.cooking__title {
+    text-align: center;
+}
+
+.main-title {
+    font-family: 'Fira Sans Condensed';
+    font-size: 57px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 30px auto 30px;
+}
+
+.main-suptitle {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 100px;
+}
+
+.lead__text {
+    font-size: 19px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    line-height: 30px;
+    margin: 40px auto 60px;
+    color: #000000;
+}
+
+.cooking__block {
+    width: 1160px;
+    height: 370px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.assort {
+    width: 460px;
+    height: 50px;
+    margin-left: 24px;
+    display: flex;
+    flex-direction: row;
+ }
+
+.text-block {
+    width: 568px;
+    height: 320px;
+    border: #e5e5e5  solid 0.5px;
+    margin-left: 24px;
+}
+
+.cooking__text {
+    font-size: 16px;
+    letter-spacing: 0em;
+    margin: 40px 69px auto;
+}
+
+.cooking__right-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.brick {
+    width: 150px;
+    height: 50px;
+    background-color: #000000;
+    margin: 0 5px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* brick - плитки из секции Наша кухня (блюда-десерты-напитки) */
+
+.brick--grey {
+    background-color: #e5e5e5;
+}
+
+.brick__text {
+    text-decoration: none;
+    color: #fff;
+}
+
+.brick__text--inv {
+    color: #000000;
 }
