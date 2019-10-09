@@ -150,7 +150,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
     left: 0;
     content: "";
-    background: linear-gradient(to right, #011533 0.08%, #021d4500 77%)
+    background: linear-gradient(to right, #011533 0.08%, #021d4500 77%);
 }
 
 .hero__title {
@@ -214,7 +214,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 
-.order_btn {
+.main-btn {
     color: #fff;
     border: solid 6px;
     box-sizing: border-box;
@@ -228,12 +228,12 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 140px;
 }
 
-.order_btn:hover {
+.main-btn:hover {
     color: #ff3419;
     border-color: #fff;
 }
 
-.order_btn:active {
+.main-btn:active {
     border-color: #ff3419;
 }
 
@@ -254,6 +254,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
     text-transform: uppercase;
     margin: 30px auto 30px;
+    color: #000;
 }
 
 .main-suptitle {
@@ -282,6 +283,24 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: left;
 }
 
+.cooking__img {
+    width: 568px;
+    height: auto;
+    background: #193661 url(img/burger.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.cooking__img:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: "";
+    background: linear-gradient(to bottom, rgba(22, 27, 44, 0.432),rgba(36, 43, 70, 0));
+}
+
 .assort {
     width: 460px;
     height: 50px;
@@ -306,6 +325,7 @@ h1, h2, h3, h4, h5, h6 {
 .cooking__right-block {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .brick {
@@ -331,4 +351,44 @@ h1, h2, h3, h4, h5, h6 {
 
 .brick__text--inv {
     color: #000000;
+}
+
+.cooking__list {
+    font-size: 16px;
+    letter-spacing: 0em;
+    line-height: 32px;
+    list-style-image: url(img/check.svg);
+    margin: 12px auto 40px 52px;
+}
+
+.full__menu {
+    height: 591px;
+    background-size: cover;
+    background-image: url(img/full_menu.jpg);
+    color: #fff;
+    position: relative;
+    z-index: 1000;
+}
+
+.full__menu:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: "";
+    background: linear-gradient(to bottom, rgba(22, 27, 44, 0.219) 34.14%, rgba(36, 43, 70, 0) 60.69%);
+    z-index: -1;
+}
+
+.main-title--white {
+    color: #fff;
+}
+
+.lead__text--white {
+    color: #fff;
+}
+
+.main-btn--look-more {
+    margin: 0
 }
