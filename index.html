@@ -65,38 +65,53 @@
         <div class="cooking__block">
             <div class="cooking__img"></div>
             <div class="cooking__right-block">
-                <div class="assort"> <!-- Блок: блюда-десерты-напитки -->
-                    <div class="brick"><a class="brick__text" href="#">Блюда</a></div>
-                    <div class="brick brick--grey"><a class="brick__text brick__text--inv" href="#">Десерты</a></div>
-                    <div class="brick brick--grey"><a class="brick__text brick__text--inv" href="#">Напитки</a></div>
+
+                <div class="tab">
+                    <button class="tablinks" onclick="choose_menu(event, 'Напитки')">Напитки</button>
+                    <button class="tablinks" onclick="choose_menu(event, 'Блюда')">Блюда</button>
+                    <button class="tablinks" onclick="choose_menu(event, 'Десерты')">Десерты</button>
                 </div>
-                <div class="text-block">
-                    <p class="cooking__text">В нашем кафе мы объединили для Вас самые модные и трендовые направления еды на сегодняшний день!
+
+                    <div id="Напитки" class="tabcontent">
+                        <div class="text-block">
+                            <p class="cooking__text">В нашем кафе мы объединили для Вас самые модные и трендовые направления еды на сегодняшний день!
                             Все блюда мы готовим исключительно из качественных правильных ингридиентов.</p>
-                    <ul class="cooking__list">
-                        <li>Более  10 видов итальянской пиццы</li>
-                        <li>Более 15 видов бургеров</li>
-                        <li>Большой выбор суши</li>
-                        <li>Большое разнообразие итальянской и японской кухни</li>
-                    </ul>
-                </div>
+                            <ul class="cooking__list">
+                                <li>Более  10 видов итальянской пиццы</li>
+                                <li>Более 15 видов бургеров</li>
+                                <li>Большой выбор суши</li>
+                                <li>Большое разнообразие итальянской и японской кухни</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="Блюда" class="tabcontent">
+                        <h3>Блюда</h3>
+                        <p>Блюд у нас реально до хрена!</p>
+                    </div>
+
+                    <div id="Десерты" class="tabcontent">
+                        <h3>Десерты</h3>
+                        <p>Кушать наши десерты - одно удовольствие! Реально рожа треснуть может.</p>
+                    </div>
+
+
             </div>
-        </div>
-    </div> <!-- /.Наша кухня -->
-    <div> <!-- Полное меню -->
-        <div class="cooking full__menu"> <!-- Наша кухня -->
-            <div class="cooking__title">
-                <p class="main-suptitle">Вкусно и аппетитно</p>
-                <h2 class="main-title main-title--white">Наше полное меню</h2>
-                <div class="divider"></div>
-                <p class="lead__text lead__text--white">Мы очень любим итальянские блюда за их богатый насыщенный вкус, пользу, красивую подачу и
-                    </br>сытность. Самые популярные блюда Италии готовятся в "Blue Cafe"</p>
-                    <div class="btn">
-                        <form action="#">
-                            <button class="main-btn main-btn--look-more" type="button" value="Заказать пиццу">Ознакомиться</button>
-                        </form>
-                        </div> <!-- /.order -->
-            </div> <!-- /.cooking title -->
-        </div> <!-- /.Полное меню -->
+        </div> <!-- /.cooking__block -->
+    <!-- Полное меню -->
+    <div class="cooking full__menu"> <!-- Наша кухня -->
+        <div class="cooking__title">
+            <p class="main-suptitle">Вкусно и аппетитно</p>
+            <h2 class="main-title main-title--white">Наше полное меню</h2>
+            <div class="divider divider--white"></div>
+            <p class="lead__text lead__text--white">Мы очень любим итальянские блюда за их богатый насыщенный вкус, пользу, красивую подачу и
+                </br>сытность. Самые популярные блюда Италии готовятся в "Blue Cafe"</p>
+                <div class="btn">
+                    <form action="#">
+                        <button class="main-btn main-btn--look-more" type="button" value="Заказать пиццу">Ознакомиться</button>
+                    </form>
+                </div> <!-- /.order -->
+        </div> <!-- /.cooking title -->
+    </div> <!-- /.Полное меню -->
+    <script src="menu_tabs.js"></script>
 </body>
 </html>
