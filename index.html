@@ -47,14 +47,15 @@
             <div class="divider divider--hero"></div>
             <h2 class="title__offer">Горячее предложение</h2>
             <p class="title__promo">Долгожданная акция выходного дня.<br/>Большая пицца по цене маленькой!</p>
-            <div class="btn"> <!-- btn -->
+            <div class="btn btn--hero"> <!-- btn -->
             <form action="#">
                 <button class="main-btn" type="button" value="Заказать пиццу">Заказать</button>
             </form>
             </div> <!-- /.order -->
         </div>
     </div>
-    <div class="cooking"> <!-- Наша кухня -->
+    <section class="cooking"> <!-- Наша кухня -->
+        <div class="conteiner">
         <div class="cooking__title">
             <p class="main-suptitle">Вкусно и аппетитно</p>
             <h2 class="main-title">Наша кухня</h2>
@@ -71,7 +72,6 @@
                     <button class="tablinks" onclick="choose_menu(event, 'Блюда')">Блюда</button>
                     <button class="tablinks" onclick="choose_menu(event, 'Десерты')">Десерты</button>
                 </div>
-
                     <div id="Напитки" class="tabcontent">
                         <div class="text-block">
                             <p class="cooking__text">В нашем кафе мы объединили для Вас самые модные и трендовые направления еды на сегодняшний день!
@@ -93,25 +93,24 @@
                         <h3>Десерты</h3>
                         <p>Кушать наши десерты - одно удовольствие! Реально рожа треснуть может.</p>
                     </div>
-
-
             </div>
         </div> <!-- /.cooking__block -->
-    <!-- Полное меню -->
-    <div class="cooking full__menu"> <!-- Наша кухня -->
+        </div> <!-- conteiner -->
+    </section><!-- Полное меню -->
+    <section class="full-menu  conteiner">
         <div class="cooking__title">
             <p class="main-suptitle">Вкусно и аппетитно</p>
             <h2 class="main-title main-title--white">Наше полное меню</h2>
             <div class="divider divider--white"></div>
             <p class="lead__text lead__text--white">Мы очень любим итальянские блюда за их богатый насыщенный вкус, пользу, красивую подачу и
                 </br>сытность. Самые популярные блюда Италии готовятся в "Blue Cafe"</p>
-                <div class="btn">
-                    <form action="#">
-                        <button class="main-btn main-btn--look-more" type="button" value="Заказать пиццу">Ознакомиться</button>
-                    </form>
-                </div> <!-- /.order -->
-        </div> <!-- /.cooking title -->
-    </div> <!-- /.Полное меню -->
+        </div>
+        <div>
+            <form action="#">
+                <button class="main-btn main-btn--look-more" type="button" value="Заказать пиццу">Ознакомиться</button>
+            </form>
+        </div>
+    </section>
     <script src="menu_tabs.js"></script>
 </body>
 </html>
