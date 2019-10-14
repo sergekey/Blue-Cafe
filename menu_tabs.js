@@ -1,4 +1,4 @@
-function choose_menu(evt, cityName) {
+function choose_menu(evt, menu) {
     var i, tabcontent, tablinks;
 
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -11,6 +11,6 @@ function choose_menu(evt, cityName) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
 
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(menu).style.display = "block";
     evt.currentTarget.className += " active";
 }

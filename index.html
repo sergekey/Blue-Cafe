@@ -11,7 +11,7 @@
 <body>
 
     <header class="header">
-        <div class="conteiner">
+        <div class="container">
             <div class="header__inner">
                 <div class="logo"><img src="img/Logo.svg" alt="Blue Cafe"></div>
                 <nav class="nav">
@@ -41,8 +41,8 @@
         </div>
     </header>
 
-    <div class="hero">
-        <div class="hero__conteiner">
+    <section class="hero">
+        <div class="hero__container">
             <h1 class="hero__title">Пицца «Верона» </br>всего за <span class="hero__title_red">49 грн.</span></h1>
             <div class="divider divider--hero"></div>
             <h2 class="title__offer">Горячее предложение</h2>
@@ -53,9 +53,9 @@
             </form>
             </div> <!-- /.order -->
         </div>
-    </div>
-    <section class="cooking"> <!-- Наша кухня -->
-        <div class="conteiner">
+    </section> <!-- /.hero -->
+    <section class="cooking"> <!-- cooking -->
+        <div class="container">
         <div class="cooking__title">
             <p class="main-suptitle">Вкусно и аппетитно</p>
             <h2 class="main-title">Наша кухня</h2>
@@ -68,11 +68,11 @@
             <div class="cooking__right-block">
 
                 <div class="tab">
-                    <button class="tablinks" onclick="choose_menu(event, 'Напитки')">Напитки</button>
-                    <button class="tablinks" onclick="choose_menu(event, 'Блюда')">Блюда</button>
+                    <button class="tablinks active" onclick="choose_menu(event, 'Блюда')">Блюда</button>
                     <button class="tablinks" onclick="choose_menu(event, 'Десерты')">Десерты</button>
+                    <button class="tablinks" onclick="choose_menu(event, 'Напитки')">Напитки</button>
                 </div>
-                    <div id="Напитки" class="tabcontent">
+                    <div id="Блюда" class="tabcontent tabcontent--active">
                         <div class="text-block">
                             <p class="cooking__text">В нашем кафе мы объединили для Вас самые модные и трендовые направления еды на сегодняшний день!
                             Все блюда мы готовим исключительно из качественных правильных ингридиентов.</p>
@@ -84,20 +84,35 @@
                             </ul>
                         </div>
                     </div>
-                    <div id="Блюда" class="tabcontent">
-                        <h3>Блюда</h3>
-                        <p>Блюд у нас реально до хрена!</p>
+                    <div id="Десерты" class="tabcontent">
+                        <div class="text-block">
+                            <p class="cooking__text">В «Blue Cafe» вы найдёте огромный выбор невероятно вкусных десертов! Просто пальчики оближешь!
+                            Все блюда мы готовим исключительно из качественных правильных ингридиентов.</p>
+                            <ul class="cooking__list">
+                                <li>Более  20 видов пирожных</li>
+                                <li>15 видов итальянского мороженого</li>
+                                <li>Большой выбор тортиков</li>
+                                <li>Огромное разнообразие выпечки</li>
+                            </ul>
+                        </div>
                     </div>
 
-                    <div id="Десерты" class="tabcontent">
-                        <h3>Десерты</h3>
-                        <p>Кушать наши десерты - одно удовольствие! Реально рожа треснуть может.</p>
+                    <div id="Напитки" class="tabcontent">
+                        <div class="text-block">
+                            <p class="cooking__text">В нашем кафе представлен большой ассортимент напитков!</p>
+                            <ul class="cooking__list">
+                                <li>Более  12 видов крафтового пива</li>
+                                <li>Огромный ассортимент фирменных коктейлей</li>
+                                <li>Большой выбор напитков и натуральных соков</li>
+                                <li>Обширная кофейная карта</li>
+                            </ul>
+                        </div>
                     </div>
             </div>
         </div> <!-- /.cooking__block -->
-        </div> <!-- conteiner -->
-    </section><!-- Полное меню -->
-    <section class="full-menu  conteiner">
+        </div> <!-- container -->
+    </section><!-- /.cooking -->
+    <section class="full-menu  container"> <!-- full-menu -->
         <div class="cooking__title">
             <p class="main-suptitle">Вкусно и аппетитно</p>
             <h2 class="main-title main-title--white">Наше полное меню</h2>
@@ -110,7 +125,28 @@
                 <button class="main-btn main-btn--look-more" type="button" value="Заказать пиццу">Ознакомиться</button>
             </form>
         </div>
-    </section>
+    </section> <!-- /.full-menu -->
+    <section class="offer container"> <!-- offer -->
+        <div class="cooking__title">
+            <p class="main-suptitle">Вкусно и аппетитно</p>
+            <h2 class="main-title">Акционные предложения</h2>
+            <div class="divider"></div>
+            <p class="lead__text">В акции участвуют блюда из одного любого раздела меню. (Подарочное блюдо не превышает</br>стоимость оплачиваемого блюда)</p>
+        </div>
+        <div class="slider"> <!-- slider -->
+            <div class="slider__item">
+                <div class="slider__img"></div>
+                <div class="slider__title"></div>
+                <div class="slider__text"></div>
+                <div class="slider__btn"></div>
+            </div>
+            <div class="slider__arrow"></div>
+            <div class="paginator"></div>
+        </div> <!-- /.slider -->
+    </section> <!-- /.offer-container -->
+    <section class="gallery"></section>
+    <section class="table-reserve"></section>
+    <footer class="footer"></footer>
     <script src="menu_tabs.js"></script>
 </body>
 </html>

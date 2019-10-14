@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-.conteiner {
+.container {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
@@ -165,7 +165,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 
-.hero__conteiner {
+.hero__container {
     width: 1440px;
     height: 800px;
     display: flex;
@@ -304,7 +304,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     width: 100%;
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 
 /* ===== tabs ===== */
@@ -334,6 +334,9 @@ h1, h2, h3, h4, h5, h6 {
     transition: 0.3s;
 }
 
+.tab button:last-child {
+    margin-right: 0;
+}
 
 .tab button:hover {
     background-color: #ff3419;
@@ -345,18 +348,24 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 
+.tablinks {
+    padding: 0;
+}
 
 .tabcontent {
     display: none;
     margin-left: 24px;
 }
 
+.tabcontent--active {
+    display: block;
+    margin-left: 24px;
+}
 
 .text-block {
-    width: 568px;
+    width: 100%;
     height: 320px;
     border: #e5e5e5  solid 0.5px;
-    /*margin-left: 24px;*/
 }
 
 .cooking__text {
@@ -409,6 +418,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 
-/*.main-btn--look-more {
-    margin: 0 auto 120px;
-}*/
+.offer {
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
