@@ -11,6 +11,6 @@ function choose_menu(evt, menu) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
 
-    document.getElementById(menu).style.display = "block";
+    document.getElementById(menu).style.display = "flex";
     evt.currentTarget.className += " active";
 }
