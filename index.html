@@ -144,8 +144,7 @@
         </div>
         <div class="glider-contain"> <!-- slider -->
             <div class="glider">
-                <div class="glider-prev"></div>
-                <div class="glider-item">
+                    <div class="glider-item">
                     <div class="wrap">
                         <div class="glider-item__img glider-item__img--1"></div>
                         <h2 class="glider-item__title">Пицца с грибами и ветчиной</h2>
@@ -203,13 +202,28 @@
                     </div>
                     <button class="main-btn main-btn--black main-btn--offer" type="button" value="Заказать">Заказать</button>
                 </div>
-                <div class="glider-next"></div>
             </div>
             <div id="resp-dots"></div>
 
-            <button role="button" aria-label="Previous" class="glider-prev">«</button>
-            <button role="button" aria-label="Next" class="glider-next">»</button>
-            <div role="tablist" class="dots"></div>
+            <button role="button" aria-label="Previous" class="glider-prev">
+                    <svg width="29" height="57" viewBox="0 0 29 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <mask id="path-1-inside-1" fill="white">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M29 0L0.715698 28.2843L29 56.5685V0Z"/>
+                        </mask>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M29 0L0.715698 28.2843L29 56.5685V0Z" fill="white"/>
+                        <path d="M0.715698 28.2843L-3.52694 24.0416L-7.76958 28.2843L-3.52694 32.5269L0.715698 28.2843ZM29 0H35V-14.4853L24.7573 -4.24264L29 0ZM29 56.5685L24.7573 60.8112L35 71.0538V56.5685H29ZM4.95834 32.5269L33.2426 4.24264L24.7573 -4.24264L-3.52694 24.0416L4.95834 32.5269ZM33.2426 52.3259L4.95834 24.0416L-3.52694 32.5269L24.7573 60.8112L33.2426 52.3259ZM35 56.5685V0H23V56.5685H35Z" fill="black" mask="url(#path-1-inside-1)"/>
+                        </svg>
+            </button>
+            <button role="button" aria-label="Next" class="glider-next">
+                    <svg class="glider-next--mirrored" width="29" height="57" viewBox="0 0 29 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <mask id="path-1-inside-1" fill="white">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M29 0L0.715698 28.2843L29 56.5685V0Z"/>
+                        </mask>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M29 0L0.715698 28.2843L29 56.5685V0Z" fill="white"/>
+                        <path d="M0.715698 28.2843L-3.52694 24.0416L-7.76958 28.2843L-3.52694 32.5269L0.715698 28.2843ZM29 0H35V-14.4853L24.7573 -4.24264L29 0ZM29 56.5685L24.7573 60.8112L35 71.0538V56.5685H29ZM4.95834 32.5269L33.2426 4.24264L24.7573 -4.24264L-3.52694 24.0416L4.95834 32.5269ZM33.2426 52.3259L4.95834 24.0416L-3.52694 32.5269L24.7573 60.8112L33.2426 52.3259ZM35 56.5685V0H23V56.5685H35Z" fill="black" mask="url(#path-1-inside-1)"/>
+                        </svg>
+            </button>
+            <div role="tablist" id="resp-dots"></div>
         </div> <!-- /.slider -->
     </section> <!-- /.offer-container -->
     <section class="gallery"></section>

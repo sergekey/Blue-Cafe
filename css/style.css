@@ -223,7 +223,6 @@ h1, h2, h3, h4, h5, h6 {
     height: 80px;
     border: solid 6px;
     box-sizing: border-box;
-    /* padding: 30px 120px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -363,7 +362,6 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
     width: 1160px;
     height: 370px;
-    /*margin-left: 24px;*/
 }
 
 .tabcontent--active {
@@ -371,7 +369,6 @@ h1, h2, h3, h4, h5, h6 {
     align-items: flex-end;
     width: 1160px;
     height: 370px;
-    /*margin-left: 24px;*/
 }
 
 .text-block {
@@ -494,4 +491,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .glider-item__text {
     margin: 10px auto 30px;
+}
+
+.glider-next--mirrored {
+    transform: scale(-1, 1);
 }
