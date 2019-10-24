@@ -134,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 100vh;
     max-height: 800px;
     margin:  auto;
-    background: #193661 url(img/pizza.jpg) center no-repeat;
+    background: #193661 url(../img/pizza.jpg) center no-repeat;
     background-size: cover;
     display: flex;
     flex-flow: column;
@@ -287,6 +287,8 @@ h1, h2, h3, h4, h5, h6 {
     height: 370px;
 }
 
+/*need to make smooth picture!*/
+
 .cooking__right-block {
     display: flex;
     flex-direction: column;
@@ -379,7 +381,7 @@ h1, h2, h3, h4, h5, h6 {
 .full-menu {
     height: 591px;
     background-size: cover;
-    background-image: url(img/full_menu.jpg);
+    background-image: url(../img/full_menu.jpg);
     color: #fff;
     position: relative;
     z-index: 1000;
