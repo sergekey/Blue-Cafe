@@ -219,15 +219,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-btn {
-    color: #fff;
+    width: 370px;
+    height: 80px;
     border: solid 6px;
     box-sizing: border-box;
-    padding: 30px 120px;
+    /* padding: 30px 120px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: none;
     font-size: 24px;
     font-weight: 400;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+}
+
+.main-btn--white {
+    color: #fff;
+}
+
+.main-btn--black {
+    color: #000;
+}
+
+.main-btn--offer {
+    width: 225px;
+    height: 80px;
 }
 
 .main-btn:hover {
@@ -374,7 +391,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 16px;
     letter-spacing: 0em;
     line-height: 32px;
-    list-style-image: url(img/check.svg);
+    list-style-image: url(../img/check.svg);
     margin: 12px auto 40px 52px;
 }
 
@@ -420,4 +437,61 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.glider-prev {
+    top: 20%;
+}
+
+.glider-next {
+    top: 20%;
+}
+
+.glider-item {
+    width: 370px;
+    height: 605px;
+    margin-bottom: 80px;
+    padding: 0 13px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+.glider-item__img {
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.glider-item__img--1 {
+    background-image: url(../img/pizza_with_mashrooms.png);
+}
+
+.glider-item__img--2 {
+    background-image: url(../img/meat_burger.png);
+}
+
+.glider-item__img--3 {
+    background-image: url(../img/blue_cheese_salad.png);
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.glider-item__title {
+    margin: 70px auto 0;
+    font-size: inherit;
+}
+
+.glider-item__text {
+    margin: 10px auto 30px;
 }
