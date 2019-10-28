@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/tcal.css">
     <link rel="stylesheet" href="css/glider.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Fira+Sans+Condensed&display=swap" rel="stylesheet">
+    <script src="js/tcal.js"></script>
     <title>Blue Cafe</title>
 </head>
 <body>
-
     <header class="header">
         <div class="container">
             <div class="header__inner">
@@ -50,7 +51,7 @@
             <p class="title__promo">Долгожданная акция выходного дня.<br/>Большая пицца по цене маленькой!</p>
             <div class="btn btn--hero"> <!-- btn -->
             <form action="#">
-                <button class="main-btn main-title--white" type="button" value="Заказать пиццу">Заказать</button>
+                <button class="main-btn main-btn--white" type="button" value="Заказать пиццу">Заказать</button>
             </form>
             </div> <!-- /.order -->
         </div>
@@ -226,9 +227,75 @@
             <div role="tablist" id="resp-dots"></div>
         </div> <!-- /.slider -->
     </section> <!-- /.offer-container -->
-    <section class="gallery"></section>
-    <section class="table-reserve"></section>
-    <footer class="footer"></footer>
+    <section class="gallery">
+        <div class="container gallery__container">
+            <div class="gallery__images">
+                <div class="gallery__item gallery__item--wide">
+                    <img src="img/gallery_1.jpg" alt="Выбирай бургер меню и получи картофель фри
+                    по вкусной цене"></div>
+                <div class="gallery__item">
+                    <img src="img/gallery_2.jpg" alt="Наши повара лучшие в своём деле"></div>
+                <div class="gallery__item">
+                    <img src="img/gallery_3.jpg" alt="У нас суши - пальчики оближешь"></div>
+                <div class="gallery__item gallery__item--wide">
+                    <img src="img/gallery_4.jpg" alt="Настоящая итальянская пицца уже ждёт вас"></div>
+                <div class="gallery__item">
+                    <img src="img/gallery_5.jpg" alt="Огромный выбор вкуснейших коктейлей и напитков"></div>
+                <div class="gallery__item">
+                    <img src="img/gallery_6.jpg" alt="«Blue Cafe» - теплая атмосфера праздинка"></div>
+            </div>
+        </div>
+    </section>
+    <section class="table-reserve">
+        <div class="conteiner">
+            <div class="cooking__title">
+                    <p class="main-suptitle">Быстро и удобно</p>
+                    <h2 class="main-title">Забронировать столик</h2>
+                    <div class="divider"></div>
+                    <p class="lead__text">Воспользуйтесь формой, указав нужные дату, время, и количество персон.
+                        Обратите внимание!</br>Бронь принимается не ранее, чем за сутки.</p>
+            </div>
+            <div class="order-wrapper">
+                <form action="#" name="order" class="order">
+                    <select name="person" class="order__form person">
+                        <option value="1">1 персона</option>
+                        <option value="2">2 персоны</option>
+                        <option value="3">3 персоны</option>
+                        <option value="4">4 персоны</option>
+                        <option value="5">5 персон</option>
+                        <option value="6">6 персон</option>
+                        <option value="8">8 персон</option>
+                        <option value="10">10 персон</option>
+                        <option value="12">12 персон</option>
+                        <option value="15">15 персон</option>
+                        <option value="20">20 персон</option>
+                    </select>
+
+                </form>
+                <form action="#" name="order" class="order">
+                    <input type="text" name="date" class="tcal order__form date__img"
+                    placeholder="Введите дату" required/>
+                </form>
+                <form action="#" name="order" class="order">
+                        <input type="text" name="date" class="tcal order__form time__img"
+                        placeholder="Введите время" required/>
+                </form>
+
+            </div>
+            <form action="#">
+                    <button class="main-btn main-btn--black" type="button"
+                    value="Заказать пиццу">Забронировать</button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__upper"></div>
+            <div class="footer__copyright">
+                <span>Copyright 2019 © Blue Cafe Kyiv - All rights reserved</span>
+            </div>
+        </div>
+    </footer>
     <script src="js/menu_tabs.js"></script>
     <script src="js/glider.js"></script>
     <script>
@@ -248,8 +315,8 @@
             breakpoint: 775,
             settings: {
                 // Set to `auto` and provide item width to adjust to viewport
-                slidesToShow: 'auto',
-                slidesToScroll: 'auto',
+                slidesToShow: 2,
+                slidesToScroll: 1,
                 itemWidth: 150,
                 duration: 0.25
             }

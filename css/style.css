@@ -231,6 +231,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    transition: 0.2s;
 }
 
 .main-btn--white {
@@ -239,6 +240,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-btn--black {
     color: #000;
+    margin: 0 auto;
 }
 
 .main-btn--offer {
@@ -253,6 +255,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-btn:active {
     border-color: #ff3419;
+}
+
+.main-btn--black:hover {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+    transition: 0.2s;
+}
+
+.main-btn--black:active {
+    color: #ff3419;
+    transition: 0.2s;
 }
 
 .cooking {
@@ -495,4 +509,91 @@ h1, h2, h3, h4, h5, h6 {
 
 .glider-next--mirrored {
     transform: scale(-1, 1);
+}
+
+.gallery__container {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery__images {
+    max-width: 1160px;
+    margin: 100px auto 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gallery__item {
+    width: 272px;
+    height: 300px;
+    margin-bottom: 24px;
+}
+
+.gallery__item--wide {
+    width: 568px;
+    height: 300px;
+}
+
+.order-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.order {
+    display: flex;
+    justify-content: center;
+    margin: 0 25px;
+    flex-wrap: wrap;
+}
+
+.order__form {
+    width: 370px;
+    height: 80px;
+    font-size: 16px;
+    display: inline-block;
+    padding: 0 24px;
+    -webkit-appearance: none;
+}
+
+.person {
+    background: url(../img/user-avatar.svg) no-repeat center right;
+    background-position: 93%;
+}
+
+.avatar {
+    width: 30px;
+
+}
+
+.date__img {
+    background: url(../img/small-calendar.svg) no-repeat center right;
+    background-position: 93%;
+}
+
+ .tcal {
+    border: solid 1px rgb(169, 169, 169) ;
+}
+
+.time__img {
+    background: url(../img/Clock\ icon.svg) no-repeat center right;
+    background-position: 93%;
+}
+
+.footer__upper {
+    height: 422px;
+    background-color: #1c4f9a;
+    margin-top: 100px;
+}
+
+.footer__copyright {
+    max-width: 1160px;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 19px;
+    padding-left: 140px;
 }
