@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/tcal.css">
+    <link rel="stylesheet" href="css/tail.datetime-default-blue.min.css">
     <link rel="stylesheet" href="css/glider.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Fira+Sans+Condensed&display=swap" rel="stylesheet">
-    <script src="js/tcal.js"></script>
     <title>Blue Cafe</title>
 </head>
 <body>
+    <script src="js/tail.datetime.min.js"></script>
+    <script src="js/tail.datetime-ru.js"></script>
     <header class="header">
         <div class="container">
             <div class="header__inner">
@@ -273,12 +274,11 @@
 
                 </form>
                 <form action="#" name="order" class="order">
-                    <input type="text" name="date" class="tcal order__form date__img"
+                    <input type="text" class="tail-datetime-field order__form date__img"
                     placeholder="Введите дату" required/>
                 </form>
                 <form action="#" name="order" class="order">
-                        <input type="text" name="date" class="tcal order__form time__img"
-                        placeholder="Введите время" required/>
+                    <input type="text" class="tail-datetime-field--time order__form time__img" placeholder="Введите время"/>
                 </form>
 
             </div>
@@ -296,6 +296,18 @@
             </div>
         </div>
     </footer>
+
+    <script class="date__img" type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function(){
+            tail.DateTime(".tail-datetime-field", {timeFormat: false});
+        });
+    </script>
+
+    <script class="time__img" type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function(){
+            tail.DateTime(".tail-datetime-field--time", {dateFormat: false});
+        });
+    </script>
     <script src="js/menu_tabs.js"></script>
     <script src="js/glider.js"></script>
     <script>

@@ -573,7 +573,8 @@ h1, h2, h3, h4, h5, h6 {
     background-position: 93%;
 }
 
- .tcal {
+.tail-datetime-field,
+.tail-datetime-field--time {
     border: solid 1px rgb(169, 169, 169) ;
 }
 
