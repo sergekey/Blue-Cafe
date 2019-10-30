@@ -46,11 +46,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo {
-    margin-left: 140px;
     width: 235px;
     height: 48px;
 }
 
+.logo--up {
+    margin-left: 140px;
+}
 
 /* Navigation =====*/
 
@@ -563,6 +565,18 @@ h1, h2, h3, h4, h5, h6 {
     background-position: 93%;
 }
 
+
+.select option {
+    height: 30px;
+}
+
+.person__num {
+    height: 30px;
+    padding-bottom: 20px;
+}
+
+
+
 .avatar {
     width: 30px;
 
@@ -587,6 +601,9 @@ h1, h2, h3, h4, h5, h6 {
     height: 422px;
     background-color: #1c4f9a;
     margin-top: 100px;
+    /* position: relative; */
+    display: flex;
+    justify-content: flex-start;
 }
 
 .footer__copyright {
@@ -597,4 +614,55 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     font-size: 19px;
     padding-left: 140px;
+}
+
+.footer__left {
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 80px 45px 0 140px;
+
+    /* position: absolute;
+    left: 140px;
+    top: 80px; */
+}
+
+.footer__text {
+    color: #fff;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 0.1em;
+}
+
+.footer__text--left {
+    margin-top: 40px;
+}
+
+.footer__right {
+    /* width: 400px; */
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 90px;
+}
+
+.footer__icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 32px;
+    height: 215px;
+
+}
+
+.contacts {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 8px;
+    list-style-type:none;
+    /* line-height: 35px; */
 }
