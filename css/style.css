@@ -522,7 +522,6 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 1208px;
     margin: 100px auto 60px;
     display: flex;
-    /* justify-content: space-between; */
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -539,10 +538,6 @@ h1, h2, h3, h4, h5, h6 {
     height: 300px;
     margin-right: 24px;
 }
-
-/* .gallery__item--mod {
-    margin-right: 0;
-} */
 
 .order-wrapper {
     display: flex;
@@ -669,11 +664,11 @@ h1, h2, h3, h4, h5, h6 {
     list-style-type:none;
 }
 
-.footer_phone {
+.footer__link {
     color: #fff;
     text-decoration: none;
 }
 
-.footer_phone:hover {
+.footer__link:hover {
     color: #ff3419;
 }
