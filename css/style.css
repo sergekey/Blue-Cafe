@@ -40,9 +40,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .header__inner {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     padding: 25px 0;
+    max-width: 1160px;
+    margin-left: 140px;
 }
 
 .logo {
@@ -51,13 +53,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo--up {
-    margin-left: 140px;
+    margin-right: 60px;
 }
 
 /* Navigation =====*/
 
 .nav {
     text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .nav__link {
@@ -68,11 +74,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav__link:first-child {
-    margin-left: 60px;
+    margin-left: 0;
 }
 
 .nav__link:last-child {
-    margin-right: 98px;
+    margin-right: 0;
 }
 
 .nav__link:hover {
@@ -85,6 +91,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Language switcher =====*/
+
+.lang {
+    display: flex;
+    flex-wrap: nowrap;
+}
 
 .lang__btn {
     border: none;
@@ -114,7 +125,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cart__link {
-    margin-left: 75px;
+    padding: 0;
     fill: #fff;
 }
 
@@ -602,7 +613,6 @@ h1, h2, h3, h4, h5, h6 {
     height: 422px;
     background-color: #1c4f9a;
     margin-top: 100px;
-    /* position: relative; */
     display: flex;
     justify-content: flex-start;
 }
@@ -639,7 +649,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer__right {
-    /* width: 400px; */
     display: flex;
     justify-content: flex-start;
     margin-top: 90px;
